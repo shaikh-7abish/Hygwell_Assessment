@@ -1,1 +1,2 @@
 # Hygwell_Assessment
+This Repository first Assignment provides a backend service built with FastAPI that allows users to extract and store content from URLs and PDF documents. It also includes a chat functionality that uses embeddings to process queries and respond with the most relevant content based on cosine similarity. The project supports both API-based and form-based interactions for easy integration and use.
