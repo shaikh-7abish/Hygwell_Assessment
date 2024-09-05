@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process  URL | PDF</title>
+</head>
+<body>
+    <h1>Enter a URL to process</h1>
+    <form action="/process_url" method="post">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required>
+        <input type="submit" value="Process">
+    </form>
+
+    <h1>Upload a PDF to process</h1>
+    <form action="/process_pdf" method="post" enctype="multipart/form-data">
+        <label for="pdf_file">PDF File:</label>
+        <input type="file" id="pdf_file" name="pdf_file" accept=".pdf" required>
+        <input type="submit" value="Process PDF">
+    </form>
+
+    <h1>Chat</h1>
+    <form action="/chat" method="post">
+        <label for="chat_id">Chat ID:</label>
+        <input type="text" id="chat_id" name="chat_id" required>
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question" required>
+        <input type="submit" value="Ask">
+    </form>
+</body>
+</html>
